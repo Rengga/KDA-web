@@ -1,0 +1,190 @@
+@media only screen and (max-width: 800px) {
+  @-webkit-keyframes Animasi {
+    0% {
+      background-position: 54% 0%;
+    }
+    50% {
+      background-position: 47% 100%;
+    }
+    100% {
+      background-position: 54% 0%;
+    }
+  }
+  @-moz-keyframes Animasi {
+    0% {
+      background-position: 54% 0%;
+    }
+    50% {
+      background-position: 47% 100%;
+    }
+    100% {
+      background-position: 54% 0%;
+    }
+  }
+  @keyframes Animasi {
+    0% {
+      background-position: 54% 0%;
+    }
+    50% {
+      background-position: 47% 100%;
+    }
+    100% {
+      background-position: 54% 0%;
+    }
+  }
+
+
+  .container-1 {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .navbar {
+    align-items: center;
+    border: 0px white solid;
+  }
+  .navbar a {
+    margin: 0px;
+  }
+  nav ul {
+    width: 100%;
+    background: linear-gradient(
+      68deg,
+      rgba(255, 188, 255, 1) 5%,
+      rgba(167, 236, 251, 1) 22%,
+      rgba(166, 197, 255, 1) 34%,
+      rgba(186, 148, 255, 1) 48%,
+      rgba(212, 238, 255, 1) 54%,
+      rgba(167, 236, 251, 1) 66%,
+      rgba(147, 179, 253, 1) 81%,
+      rgba(230, 245, 238, 1) 100%
+    );
+    background-size: 800% 800%;
+    -webkit-animation: Animasi 20s ease infinite;
+    -moz-animation: Animasi 20s ease infinite;
+    animation: Animasi 20s ease infinite;
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  nav .menu {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  #ahri-im,#akali-im,#evelyn-im,#kaisa-im {
+  margin:5px 90px;}
+  /* -------------------------------------------========== */
+  .row-1 {
+    flex-direction: column-reverse;
+  }
+  .col-1 {
+    margin-top: 60px;
+  }
+  .figbox-1,
+  .figbox-2,
+  .figbox-3,
+  .figbox-4 {
+    width: 160px;
+    height: 780px;
+    margin-left: 5px;
+  }
+  .figbox-1 img,
+  .figbox-2 img,
+  .figbox-3 img,
+  .figbox-4 img,
+  .figbox-1 .mask,
+  .figbox-2 .mask,
+  .figbox-3 .mask,
+  .figbox-4 .mask {
+    width: 160px;
+    height: 780px;
+  }
+
+  #the::before {
+    top: 920px;
+    left: -90px;
+  }
+  .row-1 #kda {
+    font-size: 160px;
+    top: 800px;
+  }
+  .row-2 {
+    margin-top: 80px;
+  }
+  .col-a {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-a .list {
+    display: flex;
+    flex-direction: row;
+  }
+  #spotify,
+  #deezer,
+  #yomusic,
+  #apple {
+    font-size: 28px;
+  }
+  .row-2 {
+    height: 500px;
+    border-top: 2px solid white;
+  }
+  .row-2 .col-a .icon {
+    margin-top: 50px;
+  }
+  .col-b {
+    width: 0%;
+    display: none;
+  }
+  /* ==================================================== */
+  .container-2::after {
+      content: url(asset/decorbg.svg);
+      width: 50px;
+      height: 50px;
+  }
+  .con-col-1 {
+    width: 50%;
+  }
+  .con-col-2 {
+    width: 50%;
+    padding-top: 90px;
+    padding-right: 20px;
+    background: rgba(255, 255, 255, 0.45);
+  }
+  .con-col-2 span {
+    font-size: 75px;
+    margin-left: 6px;
+  }
+  .con-col-2 p {
+    margin-left: 6px;
+    font-size: 15pt;
+  }
+  .con-col-2 a button {
+    margin-left: 6px;
+  }
+  /* -=--=-=-=-==================================================== */
+  #girl {
+    font-size: 80px;
+  }
+  .konten-3 img {
+    width: 150px;
+    margin-top: 200px;
+    margin-left: 50px;
+  }
+  .konten-4{
+      margin-top: 100px;
+  }
+  .konten-4 .bt-text,#text-color {
+      font-size: 200px;
+}

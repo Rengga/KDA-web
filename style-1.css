@@ -50,6 +50,7 @@ nav ul {
   align-items: center;
 }
 nav ul li {
+  display: block;
   list-style: none;
 }
 .navbar a {
@@ -90,7 +91,7 @@ nav ul li {
 .row-1 #kda {
   font-size: 400px;
   position: absolute;
-  top: 670px;
+  bottom: 680px;
   z-index: -8;
   color: #1d1924;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -668,10 +669,17 @@ nav ul li {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
+  flex-direction: row;
+}
+.container-2::after {
+  content: url(asset/decor-bg.svg);
+  position: absolute;
+  width: 90%;
+  z-index: 1;
 }
 .container-2 .decor1 {
   height: 100%;
-  width: 500px;
+  width: 800px;
   display: flex;
   z-index: 1;
   background: linear-gradient(
@@ -699,6 +707,7 @@ nav ul li {
 }
 .container-2 svg {
   position: absolute;
+  /* top: 1600px; */
   display: flex;
   z-index: 1;
 }

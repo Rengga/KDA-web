@@ -6,41 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KDA</title>
     <link rel="stylesheet" href="style-1.css" />
+    <link rel="stylesheet" href="style-2.css" />
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container-1">
       <div class="navbar">
-        <a href="">KDA</a>
+        <a href="" class="logo-kda">KDA</a>
         <nav>
-          <ul>
+          <ul id="menuList">
             <li>
-              <a href=""><img src="asset/icon-mini/ahri-white.svg" id="ahri-im" /></a>
+              <a href="#m1"><img src="asset/icon-mini/ahri-white.svg" id="ahri-im" /></a>
             </li>
             <li>
-              <a href=""><img src="asset/icon-mini/akali-white.svg" id="akali-im" /></a>
+              <a href="#m2"><img src="asset/icon-mini/akali-white.svg" id="akali-im" /></a>
             </li>
             <li>
-              <a href=""><img src="asset/icon-mini/evelyn-white.svg" id="evelyn-im" /></a>
+              <a href="#m3"><img src="asset/icon-mini/evelyn-white.svg" id="evelyn-im" /></a>
             </li>
             <li>
-              <a href=""><img src="asset/icon-mini/kaisa-white.svg" id="kaisa-im" /></a>
+              <a href="#m4"><img src="asset/icon-mini/kaisa-white.svg" id="kaisa-im" /></a>
             </li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="menu"
-              onclick="toggleMenu()"
-              width="40px"
-              height="40px"
-              viewBox="0 0 24 24"
-              style="fill: rgba(255, 255, 255, 1); transform: rotate(180deg); msfilter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"
-            >
-              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-            </svg>
           </ul>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu"
+            onclick="toggleMenu()"
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            style="fill: rgba(255, 255, 255, 1); transform: rotate(180deg); msfilter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
         </nav>
       </div>
-      <div class="row-1">
+      <div class="row-1" id="m1">
         <span id="kda">KDA</span>
         <div class="col-1">
           <span id="the">THE</span>
@@ -80,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="row-2">
+      <div class="row-2" id="m2">
         <div class="col-a">
           <span>LISTEN TO</span>
           <div class="list">
@@ -101,9 +103,9 @@
         </div>
       </div>
     </div>
-    <div class="container-2">
+    <div class="container-2" id="m3">
       <div class="decor1"></div>
-      <svg viewbox="0 0 8 4">
+      <svg viewbox="0 0 8 4" id="real-wild">
         <text x="8" y="3" text-anchor="end" font-size="2" fill="none" stroke-width=".01" stroke="#fff">REAL WILD</text>
       </svg>
       <img src="asset/kda_pre-release_akali.webp" alt="" />
@@ -123,7 +125,7 @@
         </div>
       </div>
     </div>
-    <div class="container-3">
+    <div class="container-3" id="m4">
       <div class="con-row-1">
         <div class="konten-1" style="max-width: 580px">
           <span class="prev" onclick="plusDivs(-1)"><i class="bx bxs-chevron-left" style="color: #ffffff"></i></span>
@@ -227,6 +229,26 @@
         txt[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " bt";
       }
+    </script>
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script>
+      let kda = document.getElementById("kda");
+      let rw = document.getElementById("real-wild");
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        kda.style.bottom = value * 0.3 + "px";
+        // rw.style.top = value * 0.3 + "px";
+      });
     </script>
   </body>
 </html>
